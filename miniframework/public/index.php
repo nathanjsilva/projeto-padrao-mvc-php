@@ -2,5 +2,6 @@
 
 require_once "../vendor/autoload.php";
 
-echo "ta funfante";
+$route = new \App\Route; 
 
+?>
