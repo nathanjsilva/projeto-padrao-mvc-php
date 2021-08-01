@@ -2,5 +2,8 @@
 <hr>
 
 <?php
-	echo 'Chegamos ao IndexController e disparamentos a action sobreNos';
+	foreach($this->view->dados as $indice => $produto) {
+		echo $produto['titulo'] . ' - ' . $produto['descricao'];
+		echo '<br />';
+	}
 ?>
