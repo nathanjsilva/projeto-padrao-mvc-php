@@ -1,19 +1,15 @@
 <?php
 
-namespace App\Models;
+	namespace App\Models;
 
-class Produto {
+	use MF\Model\Model;
 
-	protected $db;
+	class Produto extends Model{
 
-	public function __construct(\PDO $db) {
-		$this->db = $db;
+		public function getProdutos() {
+			$query = "select id, descricao, preco from tb_produtos";
+			return $this->db->query($query)->fetchAll();
+		}
 	}
-
-	public function getProdutos() {
-		$query = "select id, descricao, preco from tb_produtos";
-		return $this->db->query($query)->fetchAll();
-	}
-}
 
 ?>
