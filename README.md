@@ -1,2 +1,2 @@
 # projeto-padrao-mvc-php
-projeto padrão mvc
+Aplicando um "miniframework" utilizando o padrão MVC
